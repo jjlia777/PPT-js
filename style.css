@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url(font/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(font/Roboto-Regular.ttf);
+}
+
+/* RESET CSS */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FIM RESET CSS */
+
+/* MAIN */
+
+body {
+    background-color: rgb(206, 224, 255);
+}
+
+ul#jogadorEscolha li a:hover, 
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado{
+    opacity: 1;
+}
+
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a {
+    opacity: 0.6;
+}
+
+.titulo {
+    display: flex;
+    flex-wrap: wrap;
+    text-shadow: -4px 3px 19px rgb(0, 0, 0);
+    color: white;
+    font: 500 70px 'Poppins Bold', sans-serif;
+    margin-top: -500px;
+}
+
+.flex {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#jogadorEscolha li a img{
+    width: 130px;
+    max-width: 200px;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+#jogadorEscolha li a img:hover {
+    transform: scale(1.2);
+}
+
+#computadorEscolha li a img{
+    width: 130px;
+}
+
+#jogador {
+    background-color: rgba(163, 36, 36, 0.888);
+    width: 600px;
+    height: 380px;
+    border-radius: 80px;
+}
+
+#computador {
+    background-color: rgba(36, 38, 163, 0.752);
+    width: 600px;
+    height: 380px;
+    border-radius: 80px;
+    margin-bottom: 70px;
+}
+
+#jogadorEscolha {
+    margin-top: 40px;
+    margin-left: 88px;
+
+}
+
+#computadorEscolha {
+    margin-top: 40px;
+    margin-left: 88px;
+
+}
+
+.jogadas {
+    float: left;
+  max-width: 33.33%; /* Divide igualmente em 3 imagens */
+  height: auto;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+#placar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 40px 50px;
+}
+
+#jogadorNome, #computadorNome {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font: 300 40px 'Poppins Bold', sans-serif;
+    color: white;
+}
+
+#jogadornum {
+    margin-left: 275px;
+    background-color: rgb(255, 112, 112);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#jogadorPontos {
+    text-align: center;
+    font: 300 32px 'Poppins Bold', sans-serif;
+    color: white;
+}
+
+#computadornum {
+    margin-left: 275px;
+    background-color: rgb(112, 164, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#computadorPontos {
+    text-align: center;
+    font: 300 32px 'Poppins Bold', sans-serif;
+    color: white;
+}
+
+#mensagem {
+    color: white;
+    margin-top: 22px;
+    font: 300 30px 'Poppins Bold', sans-serif;
+    text-align: center;
+}
+
+#caixa {
+    margin-left: 565px;
+    border-radius: 10px;
+    background-color: rgb(211, 190, 33);
+    width: 400px;
+    height: 50px;
+}
+
+#versus {
+    color: white;
+    font: 300 59px 'Poppins Bold', sans-serif;
+    margin-top: 130px;
+}
